@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2021"],
+    "baseUrl": "../..",
+    "paths": {
+      "@example/core": ["../../packages/core/src/index.ts"],
+      "@example/core/*": ["../../packages/core/src/*"]
+    }
+  },
+  "include": ["src"]
+}

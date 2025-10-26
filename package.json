@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@example/monorepo",
+  "packageManager": "pnpm@9.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "master:start": "pnpm -C servers/master run start",
+    "master:build": "pnpm -C servers/master run build"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

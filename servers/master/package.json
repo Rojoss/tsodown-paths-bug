@@ -1,0 +1,19 @@
+{
+  "name": "@example/master",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "tsdown --watch",
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "@example/core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsdown": "^0.14.0"
+  }
+}
